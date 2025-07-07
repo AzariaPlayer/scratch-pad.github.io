@@ -19,11 +19,30 @@
  *  d. how do you concatenate Strings? What operator do we use?
  */
 
+/* 
+I - Function should take a string
+O - Output should reverse the spelling of that string 
+C - Use a loop that can iterate through a string
+E - n/a
+*/
+
 function reverseString(input) {
   // YOUR CODE GOES BELOW HERE //
-  
+  // make a storage variable 
+  let backwards = "";
+  // use a for...of loop because it can iterate through a sting 
+  // remember var stands for the index of the string
+  for(var i of input){
+    backwards = i + backwards; // adding the string index to the backwards string
+  }
+  return backwards; 
   // YOUR CODE GOES ABOVE HERE //
 }
+// invoke and call the function 
+console.log(reverseString("hello"));
+
+
+
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (

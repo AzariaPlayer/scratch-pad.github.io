@@ -15,12 +15,20 @@
 /**
  * Given an input value, print the value to the screen using console.log().
  */
-
+/*
+I - input a string 
+O - print the string to the console
+C - n/a
+E - n/a
+*/
 function print(value) {
   // YOUR CODE BELOW HERE //
-  
+  // print the value to the console
+  console.log(value);
   // YOUR CODE ABOVE HERE //
 }
+// invoke the function
+console.log(print("hello"));
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (

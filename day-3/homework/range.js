@@ -23,8 +23,32 @@
  */
 function range(start, end) {
   // YOUR CODE GOES BELOW HERE //
+  // lets start with a storage for the new array
+  let newRange = [];
+  // if else statements can give us the results for two options
+  // if start is less than or equal to end
+  if(start <= end){
+    // but you want a counter to add up to the end parameter
+    for(var i = start; i <= end; i++) {
+      // push that number to the array
+    newRange.push(i);
+    }
+    // now for the reverse
+  } else {
+    // found out you can do a loop as the code block 
+    // do the same but reverse 
+    for(var i = start; i >= end ; i--){
+    newRange.push(i);
+  }
+  }
+  // make sure to return the array
+  return newRange;
   // YOUR CODE GOES ABOVE HERE //
 }
+// invoke the function
+console.log(range(5, 10));
+
+console.log(range(20, 10));
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (
